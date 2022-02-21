@@ -10,7 +10,7 @@ let computerSelection = computerPlay(computer);
 console.log(playerSelection);
 console.log(computerSelection);
 
-function roundGame(playerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
    if (computerSelection === playerSelection) {
       return console.log("Empate!");
    }
@@ -35,4 +35,4 @@ function roundGame(playerSelection, computerSelection) {
 }
 
 
-console.log(roundGame(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
