@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body>
-<div>
-    <button value="rock">Rock</button>
-    <button value="paper">Paper</button>
-    <button value="scissor">Scissor</button>
+    
+<div class="container">
+    <div class="buttons">
+        <button value="✊">✊</button>
+        <button value="🖐️">🖐️</button>
+        <button value="✌️">✌️</button>
+    </div>
+    
+    <div class="choices">
+        <h1>Choices</h1>
+        <h2>Computer Choice:  <span id="computer-display"></span> </h2>
+        <h2>Player Choice:  <span id="player-display"></span> </h2>
+    </div>
+    
+    <div class="results-container">
+        <h1>Scores</h1>
+    <h2>Computer Score: <span id="computer-score"></span> </h2>
+    <h2>Player Score: <span id="player-score"></span> </h2>
 </div>
 
-<div class="choices">
-    <h2>Computer Choice: <span id="computer-display"></span> </h2>
-    <h2>PlayerChoice: <span id="player-display"></span> </h2>
-</div>
-
-<div class="results-container">
-<h2>Computer Score: <span id="computer-score"></span> </h2>
-<h2>Player Score: <span id="player-score"></span> </h2>
-<h2>Game Results: <span id="result-display"> </span> </h2>
+    <h2>Game Result: <span id="result-display"> </span> </h2>
 </div>
 
 </body>

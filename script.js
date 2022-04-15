@@ -3,7 +3,7 @@ let computerScore = 0;
 const computerDisplay = document.getElementById('computer-display');
 const playerDisplay = document.getElementById('player-display');
 let resultDisplay = document.getElementById('result-display');
-let computer = ['rock', 'paper', 'scissor'];
+let computer = ['✊', '🖐️', '✌️'];
 const computerScoreDisplay = document.getElementById('computer-score');
 const playerScoreDisplay = document.getElementById('player-score');
 
@@ -51,28 +51,28 @@ function playRound() {
      if (computerSelection === playerSelection) {
         return console.log("Draw!");
      }
-     else if (computerSelection === "rock" && playerSelection === "paper") {
+     else if (computerSelection === "✊" && playerSelection === "🖐️") {
           playerScore++;
-        return console.log("You won! Paper beats rock!");
+        return console.log("You won! 🖐️ beats ✊!");
      }
-     else if (computerSelection === "rock" && playerSelection === "scissor") {
+     else if (computerSelection === "✊" && playerSelection === "✌️") {
+     computerScore++;
+         return console.log("You lose! ✊ beats ✌️!");
+     }
+     else if (computerSelection === "🖐️" && playerSelection === "✊") {
           computerScore++;
-         return console.log("You lose! Rock beats scissor!");
+        return console.log("You lose! 🖐️ beats ✊!");
      }
-     else if (computerSelection === "paper" && playerSelection === "rock") {
-          computerScore++;
-        return console.log("You lose! Paper beats rock!");
-     }
-     else if (computerSelection === "paper" && playerSelection === "scissor") {
+     else if (computerSelection === "🖐️" && playerSelection === "✌️") {
           playerScore++;
-        return console.log("You won! Scissor beats paper!");
+        return console.log("You won! ✌️ beats 🖐️!");
      }
-     else if (computerSelection === "scissor" && playerSelection === "rock") {
+     else if (computerSelection === "✌️" && playerSelection === "✊") {
           playerScore++;
-        return console.log("You won! Rock beats scissor!");
+        return console.log("You won! ✊ beats ✌️!");
      }
-     else if (computerSelection === "scissor" && playerSelection === "paper") {
+     else if (computerSelection === "✌️" && playerSelection === "🖐️") {
           computerScore++;
-        return console.log("You lose! Scissor beats paper!");
+        return console.log("You lose! ✌️ beats 🖐️!");
      }
   }
